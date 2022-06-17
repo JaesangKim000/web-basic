@@ -1,0 +1,233 @@
+.box{
+    border: 1px solid black;
+    width: 90px;
+    height: 60px;
+}
+.special-box{
+    border: 1px solid black;
+    width: 90px;
+    height: 60px;
+    padding: 0px;
+    margin:0px;
+}
+.bottom-border-width{
+    border: soild black;
+    border-width: 1px 1px 2px 1px
+}
+
+.cell{
+    width: 90px;
+    height: 0px;
+    vertical-align: bottom;
+    border: 1px solid black;
+    border-width: 0 0 1px 0; /*이걸 처리를 안하면 가장자리는 두껍게 안칠해지네요..*/
+    
+}
+
+.table{
+    border-collapse: separate;
+    border-spacing: 0px;
+    margin: 0px;
+    padding:0px;
+    
+
+}
+.table2{
+    border-collapse: separate;
+    border-spacing: 0px;
+    padding:0px;
+    margin:0px;
+    
+    
+     
+}
+.left_table{
+    vertical-align: top;
+    text-align: end;
+    width: 20px;
+    height: 60px;
+    border: 1px solid black;
+    border-width: 0 1px 0 0;  /*이걸 처리를 안하면 가장자리는 두껍게 안칠해지네요..*/
+    
+}
+
+.border{
+    border: 1px solid black;
+}
+
+
+#lecture1{
+    background-color: rgb(5, 21, 255);
+    border: 1px solid black;
+    vertical-align: top;
+    text-align: center;
+    color:aliceblue;
+    position:relative;
+    z-index:1;
+    -webkit-transition:-webkit-transform 0.5s ease-in-out;
+    -moz-transition:-moz-transform 0.5s ease-in-out;
+    -o-transition:-o-transform 0.5s ease-in-out;
+    transition:transform 0.5s ease-in-out;
+    
+    
+}
+
+#lecture2{
+    background-color: blueviolet;
+    border: 1px solid black;
+    vertical-align: top;
+    text-align: center;
+    color:aliceblue;
+}
+
+#lecture3{
+    background-color: rgb(17, 238, 10);
+    border: 1px solid black;
+    vertical-align: top;
+    text-align: center;
+    color:aliceblue;
+}
+#lecture4{
+    background-color: rgb(255, 5, 5);
+    border: 1px solid black; 
+    vertical-align: top;
+    text-align: center;
+    color:aliceblue;
+}
+
+#lecture5{
+    background-color: rgb(155, 93, 17);
+    border: 1px solid black;
+    vertical-align: top;
+    text-align: center;
+    color:aliceblue;
+}
+
+#box1{
+    border: 1px solid black;
+    padding: 20px;
+    text-align: left;
+    margin-top: 0px;
+
+}
+.empty{
+    width:0px;
+    height:0px;
+}
+
+.margin_bottom{
+    
+    margin-bottom: 0%;
+}
+
+#special{
+    height: 0px;
+    width: 20px;
+}
+
+
+#empty-box{
+    height: 60px;
+    width: 20px;
+
+}
+
+#bottom-box{
+    height:0px;
+    width:90px;
+    border: 1px solid black;
+    border-width: 1px 0 0 0;
+} 
+
+#right-box{
+    height:60px;
+    width:0px;
+    border-color: black;
+    border-left-width: 1px ;
+}
+
+.second-box{
+    height: 30px;
+    width: 90px;
+    margin: 0px;
+    
+}
+
+#lecture6{
+    background-color: gold;
+    border:1px soild black;
+    vertical-align: top;
+    text-align: center;
+    color:aliceblue;
+    
+}
+
+#empty-header{
+    height:0px;
+    width:90px;
+}
+
+#new-box1{
+    height:96px;
+    width:94px;
+    background-color: gold;
+    border:1px soild black;
+    vertical-align: top;
+    text-align: center;
+    color:aliceblue;
+    padding:0px;
+    margin:0px;
+
+}
+#new-box2{
+    height:81px;
+    width:94px;
+    background-color:darkgreen;
+    border:1px soild black;
+    vertical-align: top;
+    text-align: center;
+    color:aliceblue;
+    padding:0px;
+    margin:0px;
+}
+.align-top{
+    vertical-align: top;
+}
+
+.zoom-in-out-box {
+    
+    animation: zoom-in-zoom-out 1s ease infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+  .img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .hover-img {
+    transform: scale(1.5);
+}
+
+.zoom{
+    zoom : 150%
+}
+
+#lecture1:hover {
+    z-index:2; /* Put on top of others */
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -o-transform:scale(1);
+    transform:scale(1);
+    }

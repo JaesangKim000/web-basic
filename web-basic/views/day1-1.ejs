@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head> <!--정보를 나타냄, 설정?-->
+        <link rel="stylesheet" href="/stylesheets/day1-1.css"/>
+        <meta charset="utf-8">
+        <title>timetable</title>
+        <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+        
+    </head>
+    <body>
+        <h1 class="margin_bottom">2022 1학기 시간표</h1>
+        <table class="table">
+            
+            <tr>
+                <th id="special"></th>
+                <th class="cell">월</th>
+                <th class="cell">화</th>
+                <th class="cell">수</th>
+                <th class="cell">목</th>
+                <th class="cell">금</th>
+                <th class="empty"></th>
+            </tr>
+            <tr>
+                <td class="left_table">9</td>  <!--9시~10시-->
+                <td class="box"></td>
+                <td class="special-box align-top" rowspan="2">
+                    <div id="new-box1" >
+                        기본과목6<br/>12345<br/>FFF교수
+                    </div>
+                </td>
+                <td id="lecture3">기본과목3 <br/>26502 <br/> CCC교수</td>
+                <td class="box"></td>
+                <td rowspan="3" id="lecture5">기본과목5 <br/>31245 <br/> EEE교수</td>
+                <td id="right-box"></td>
+            </tr>
+            <tr>
+                <td class="left_table">10</td> <!--10시~11시-->
+                <td class="box"></td>
+                
+                <td class="box"></td>
+                <td class="box"></td>
+                <td id="right-box"></td>
+            </tr>
+            <tr>
+                <td class="left_table">11</td> <!--11시~12시-->
+                <td id="lecture1">기본과목1 <br/>26502 <br/> AAA교수</td>
+                <td class="box"></td>
+                <td class="box"></td>
+                <td class="special-box align-top" rowspan="2">
+                    <div id="new-box2" >
+                        기본과목7<br/>12345<br/>GGG교수
+                    </div>
+                </td>
+                <td id="right-box"></td>
+            </tr>
+            <tr>
+                <td class="left_table">12</td> <!--12시~13시-->
+                <td class="box"></td>
+                <td class="box"></td>
+                <td class="box"></td>
+                
+                <td class="box"></td>
+                <td id="right-box"></td>
+            </tr>
+            <tr>
+                <td class="left_table">13</td> <!--13시~14시-->
+                <td class="box"></td>
+                <td id="lecture2">기본과목2 <br/>12345 <br/> BBB교수</td>
+                <td class="box"></td>
+                <td class="box"></td>
+                <td class="box"></td>
+                <td id="right-box"></td>
+            </tr>
+            <tr>
+                <td class="left_table">14</td> <!--14시~15시-->
+                <td class="box"></td>
+                <td class="box"></td>
+                <td class="box"></td>
+                <td rowspan="2" id="lecture4">기본과목4 <br/>42312 <br/> DDD교수</td>
+                <td class="box"></td>
+                <td id="right-box"></td>
+            </tr>
+            <tr>
+                <td class="left_table">15</td> <!--15시~16시-->
+                <td class="box"></td>
+                <td class="box"></td>
+                <td class="box"></td>
+                <td class="box"></td>
+                <td id="right-box"></td>
+            </tr>
+            <tr>                          <!--테두리를 밑에도 겹치게 만들고 싶어서 만듬-->
+                <td id="empty-box"></td> 
+                <td id="bottom-box"></td>
+                <td id="bottom-box"></td>
+                <td id="bottom-box"></td>    
+                <td id="bottom-box"></td>
+                <td id="bottom-box"></td>
+            </tr>
+        </table>
+        <br/><br/>
+        <h2 class="margin_bottom" >새 수업 추가</h2>
+        <div id="box1">
+            <form>
+                과목명 <input type="text" placeholder="과목명을 입력하세요"><br/>
+                교수명 <input type="text" placeholder="교수명을 입력하세요"><br/>
+                시간 <input type="radio" name="day" value="monday"/>월
+                <input type="radio" name="day" value="tuesday"/>화
+                <input type="radio" name="day" value="wednesday"/>수
+                <input type="radio" name="day" value="thursday"/>목
+                <input type="radio" name="day" value="friday"/>금<br/>
+                <select name="start_hour">
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                </select>시
+                <select name="start_minute">
+                    <option>00</option>
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                </select>분
+                ~<select name="finish_hour">
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                </select>시
+                <select name="finish_minute">
+                    <option>00</option>
+                    <option>10</option>
+                    <option>20</option>
+                    <option>30</option>
+                    <option>40</option>
+                    <option>50</option>
+                </select>분<br/>
+                <input type="text" placeholder="강의실 장소를 입력하세요"><br/><br/>
+                <input type="submit" />
+
+
+
+
+            </form>
+
+        </div>
+
+
+
+
+        
+        
+    </body>
+</html>
